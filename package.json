@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "single": "cross-env CONFIG_FILE=single ./node_modules/.bin/nightwatch -e chrome tests",
-    "parallel": "cross-env CONFIG_FILE=parallel ./node_modules/.bin/nightwatch -e chrome,edge,safari tests"
+    "parallel": "cross-env CONFIG_FILE=parallel ./node_modules/.bin/nightwatch -e chrome,edge,safari tests",
+    "smartUI": "cross-env CONFIG_FILE=single ./node_modules/.bin/nightwatch tests/smartUI_test.js -e test1"
   },
   "dependencies": {
     "@lambdatest/node-rest-client": "^1.0.5",
